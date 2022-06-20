@@ -1,0 +1,33 @@
+{
+	"name": "app-cli",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"bin": {
+		"cli-app": "./dist/index.js"
+	},
+	"scripts": {
+		"build": "npm run tsc",
+		"chmod": "chmod u+x ./bin/index.js",
+		"lint": "eslint '**/*.{js,ts}' --fix",
+		"tsc": "tsc",
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"author": "",
+	"license": "ISC",
+	"dependencies": {
+		"@grpc/grpc-js": "^1.5.0",
+		"@hyperledger/fabric-gateway": "^1.0.0",
+		"commander": "^9.3.0",
+		"fabric-network": "^2.2.13",
+		"js-yaml": "^4.1.0"
+	},
+	"devDependencies": {
+		"@tsconfig/node16": "^1.0.3",
+		"@types/js-yaml": "^4.0.5",
+		"@typescript-eslint/eslint-plugin": "^5.6.0",
+		"@typescript-eslint/parser": "^5.6.0",
+		"eslint": "^8.4.1",
+		"typescript": "~4.5.2"
+	}
+}
